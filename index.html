@@ -36,9 +36,21 @@
     background-position: left center, center, right;
   }
 
+  p span.yellow {
+    background-image: linear-gradient(
+        to bottom right,
+        transparent 50%,
+        #f1c40f 50%
+      ),
+      linear-gradient(#f1c40f, #f1c40f),
+      linear-gradient(to top left, transparent 50%, #f1c40f 50%);
+    background-repeat: no-repeat;
+    background-size: 10px 40px, calc(100% - 20px) 40px, 10px 40px;
+    background-position: left center, center, right;
+  }
   </style>
 </head>
 <body>
-  <p class="container">This here <span>Next.js</span> blog is under construction.</p>
+  <p class="container">This here <span>Next.js</span> blog is under <span class="yellow">construction</span>.</p>
 </body>
 </html>
